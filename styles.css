@@ -29,8 +29,20 @@ header a {
     text-decoration: none;
 }
 
+
+nav {
+    background-color: #d19649;
+    padding: 10px;
+  }
+
+  li {
+    display: inline;
+  }
+  
 ul {
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 ul button {
