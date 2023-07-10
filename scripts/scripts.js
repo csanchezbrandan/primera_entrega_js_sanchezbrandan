@@ -89,7 +89,7 @@ const saludarUsuario = () => {
 };
 
 const mostrarMenu = () => {
-    alert (mensajeMenu);
+    swal (mensajeMenu);
 };
 
 const ingresarCantidad = () => {
@@ -170,11 +170,11 @@ const calcularDescuentoCantidad = (cantidad, total) => {
 
 const mostrarTotal = (cantidad) => {
     const total = calcularTotal(cantidad);
-    alert(`Tu total es: $${total}. A continuación elegí tu opción de pago.`);
+    swal(`Tu total es: $${total}. A continuación elegí tu opción de pago.`);
 };
 
 const procesarPagoEfectivo = (total) => {
-    alert(`Pago completo, tu total fue de $${total}`);
+    swal(`Pago completo, tu total fue de $${total}`);
     console.log(`El pago final fue de: ${total}`);
 };
 
