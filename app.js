@@ -20,7 +20,7 @@ function ejecutarPrograma() {
     procesarPago(totalSegunCantidad);
 
     finalizarPedido();
-    
+
     resetearPedido();
 }
 

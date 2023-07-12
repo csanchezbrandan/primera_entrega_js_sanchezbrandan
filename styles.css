@@ -5,23 +5,13 @@
 }
 
 body {
-    background-color: #FFEBC1;
-    min-height: 100vh;
+    /*   background-color: #FFEBC1;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
-header {
-    width: 700px;
-    height: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #8E3200;
-    align-items: center;
-}
+
 
 header a {
     color: white;
@@ -33,12 +23,12 @@ header a {
 nav {
     background-color: #d19649;
     padding: 10px;
-  }
+}
 
-  li {
+li {
     display: inline;
-  }
-  
+}
+
 ul {
     display: flex;
     margin: 0;
@@ -52,10 +42,7 @@ ul button {
     color: white;
 }
 
-ul button:hover {
-    background-color: #D7A86E;
-    color: black;
-}
+
 
 main {
     background-color: #D7A86E;
@@ -69,7 +56,7 @@ main {
 main div {
     padding: 20px;
     display: flex;
-    
+
 }
 
 button {
@@ -82,10 +69,7 @@ button {
     align-self: center;
 }
 
-button:hover {
-    background-color: #8E3200;
-    color: white;
-}
+
 
 footer {
     display: flex;
@@ -96,4 +80,3 @@ footer {
     width: 700px;
     height: 50px;
 }
-

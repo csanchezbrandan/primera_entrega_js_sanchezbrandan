@@ -14,7 +14,7 @@ class Empanada {
         this.nombre = nombre;
         this.sigla = sigla;
     }
-    
+
     mostrarInfo() {
         return `${this.nombre} (${this.sigla})`;
     }
@@ -26,7 +26,7 @@ const generarMenuDeSabores = (listaDeSabores) => {
     const copiaDeLista = listaDeSabores;
     copiaDeLista.forEach(sabor => {
         opcion++;
-        mensajeDelMenu += '\nOpcion ' + opcion + ': '+ sabor.mostrarInfo();
+        mensajeDelMenu += '\n Opcion ' + opcion + ': ' + sabor.mostrarInfo();
     })
     return mensajeDelMenu;
 };
@@ -37,7 +37,7 @@ const generarMenuPromociones = (listaDePromociones) => {
     const copiaDeLista = listaDePromociones;
     copiaDeLista.forEach(promo => {
         opcion++;
-        mensajeDelMenu += '\nOpcion ' + opcion + ': '+ promo.mostrarInfo();
+        mensajeDelMenu += '\nOpcion ' + opcion + ': ' + promo.mostrarInfo();
     })
     return mensajeDelMenu;
 };
@@ -85,11 +85,11 @@ const mensajePago = `Modalidad de pago:
 const mensajePromos = generarMenuPromociones(promocionesBancarias);
 
 const saludarUsuario = () => {
-    alert (mensajeBienvenida);
+    alert(mensajeBienvenida);
 };
 
 const mostrarMenu = () => {
-    swal (mensajeMenu);
+    swal(mensajeMenu);
 };
 
 const ingresarCantidad = () => {
@@ -98,8 +98,8 @@ const ingresarCantidad = () => {
 };
 
 const verificarCantidadIngresada = (cantidad) => {
-    return (cantidad <= 0 || cantidad === null || isNaN(cantidad)) ? 
-        false : 
+    return (cantidad <= 0 || cantidad === null || isNaN(cantidad)) ?
+        false :
         true;
 };
 
@@ -205,7 +205,7 @@ const procesarPago = (total) => {
     } else {
         const promoElegida = solicitarOpcion(mensajePromos, 4);
         procesarPagoTarjeta(promoElegida, total);
-    }    
+    }
 };
 
 const finalizarPedido = () => {
